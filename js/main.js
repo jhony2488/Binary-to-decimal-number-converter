@@ -25,3 +25,4 @@ function load(){
     var loading= document.getElementById('loading')
     loading.style.display="none"
 }
+
