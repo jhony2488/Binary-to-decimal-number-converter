@@ -3,6 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Jhonata Vinicius" />
+    <meta
+      name="description"
+      content="Conversor de numero binario para decimal"
+    />
+    <meta name="keywords" content="numeros, binarios, decimais" />
+    <meta name="copyright" content="© 2020 Jhonata Vinicius" />
+    <meta name="robots" content="index">
     <title>ConvBD</title>
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="shortcut icon" href="./assets/icons8-ficheiro-binário-48.png" />
@@ -11,18 +19,42 @@
   </head>
   <body onload="load()">
     <div class="container-loading" id="loading">
-        <svg id="svg"  viewBox="0 0 40 60">
-            <polygon class="triangulo" fill="none" stroke="#fff" stroke-width="1" points="16,1 32, 32 1,32"/>
-            <text class="loading" x="0" y="45" fill="#ffff">Loading....</text>
-        </svg>
+      <svg id="svg" viewBox="0 0 40 60">
+        <polygon
+          class="triangulo"
+          fill="none"
+          stroke="#fff"
+          stroke-width="1"
+          points="16,1 32, 32 1,32"
+        />
+        <text class="loading" x="0" y="45" fill="#ffff">Loading....</text>
+      </svg>
     </div>
     <div class="container" id="app">
       <h1 class="title titulo-principal">Conversor Binario para decimal</h1>
       <label for="input" class="binary">Numero Binário</label>
-      <input id="input" class="input1"v-model="binary" type="text" placeholder="Insira aqui o número binário">
+      <input
+        id="input"
+        class="input1"
+        v-model="binary"
+        type="text"
+        placeholder="Insira aqui o número binário"
+      />
       <label for="input2" class="decimal">Numero Decimal</label>
-      <input id="input2" class="input2" v-model="decimal" type="text" placeholder="Insira aqui o número decimal" disabled="">
-      <p>Copyright &copy;  <a href="https://www.jhonyaraujo.com.br/" target="blank">Jhonata Vinicius</a> </p>
+      <input
+        id="input2"
+        class="input2"
+        v-model="decimal"
+        type="text"
+        placeholder="Insira aqui o número decimal"
+        disabled=""
+      />
+      <p>
+        Copyright &copy;
+        <a href="https://www.jhonyaraujo.com.br/" target="blank"
+          >Jhonata Vinicius</a
+        >
+      </p>
     </div>
     <script src="./js/main.js"></script>
     <script src="./js/escrita-maquina.js"></script>
