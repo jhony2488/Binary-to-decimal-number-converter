@@ -21,3 +21,7 @@ const vm = new Vue({
     this.calculo1
   },
 })
+function load(){
+    var loading= document.getElementById('loading')
+    loading.style.display="none"
+}
