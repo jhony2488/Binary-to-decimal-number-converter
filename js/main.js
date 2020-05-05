@@ -7,9 +7,14 @@ const vm = new Vue({
   methods: {
     calculoBinaryDecimal() {
       setInterval(() => {
-        var jhony = this.binary
-        this.decimal = parseInt(jhony, 2)
-      }, 1000)
+        var binary = this.binary
+        const regex = /[0-1]/
+        if (regex.test(binary)) {
+          this.decimal = parseInt(jhony, 2)
+        } else {
+          this.decimal = 'Insira somente numeros binários'
+        }
+      }, 50)
     },
   },
   computed: {
@@ -21,8 +26,7 @@ const vm = new Vue({
     this.calculo1
   },
 })
-function load(){
-    var loading= document.getElementById('loading')
-    loading.style.display="none"
+function load() {
+  var loading = document.getElementById('loading')
+  loading.style.display = 'none'
 }
-
