@@ -10,7 +10,7 @@ const vm = new Vue({
         var binary = this.binary
         const regex = /[0-1]/
         if (regex.test(binary)) {
-          this.decimal = parseInt(jhony, 2)
+          this.decimal = parseInt(binary, 2)
         } else {
           this.decimal = 'Insira somente numeros binários'
         }
