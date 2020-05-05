@@ -75,6 +75,40 @@ a:hover {
   opacity: 1;
   animation: pisca 0.7s infinite;
 }
+.container-loading {
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    background-color: #1e466f;
+    z-index: 9999999999999999999;
+  }
+  .container-loading svg {
+    width: 200px;
+    min-height: 200px;
+  }
+  .loading {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 7px;
+    margin-top: -10px;
+  }
+  .triangulo {
+    stroke-dasharray: 17;
+    stroke-dashoffset: 34;
+    animation: triangulo infinite;
+    animation-duration: 6s;
+    animation-direction: normal;
+    animation-delay: 0.1s;
+  }
+  @keyframes triangulo {
+    from {
+      stroke-dashoffset: 34;
+    }
+    to {
+      stroke-dashoffset: 340;
+    }
+  }
 
 @keyframes pisca {
   0%,
