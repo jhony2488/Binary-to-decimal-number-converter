@@ -9,13 +9,13 @@
     <script src="./js/vue.min.js"></script>
     <script src="./js/vue.js"></script>
   </head>
-  <body>
-        <div class="container-loading" id="loading">
+  <body onload="load()">
+    <div class="container-loading" id="loading">
         <svg id="svg"  viewBox="0 0 40 60">
             <polygon class="triangulo" fill="none" stroke="#fff" stroke-width="1" points="16,1 32, 32 1,32"/>
             <text class="loading" x="0" y="45" fill="#ffff">Loading....</text>
         </svg>
-    </div onload="load()">
+    </div>
     <div class="container" id="app">
       <h1 class="title titulo-principal">Conversor Binario para digital</h1>
       <label for="input" class="binary">Numero Binário</label>
